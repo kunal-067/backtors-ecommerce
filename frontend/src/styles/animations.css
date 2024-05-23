@@ -1,0 +1,29 @@
+@keyframes buttonBg{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+.animateLogin:hover > #login-anm{
+    background-color: #23A6F0;
+    animation: buttonBg 0.7s ease forwards;
+}
+
+.customBgAnimateH-1:hover > #animate-h-b-1{
+    background-color: #fff;
+    opacity: 80%;
+    animation: buttonBg 0.7s ease forwards;
+}
+
+.customBgAnimate1:hover > #animate-b-1{
+    background-color: #fff;
+    animation: buttonBg 1s ease forwards;
+}
+
+.customBgAnimate2:hover > #animate-b-2{
+    background-color: #2DC071;
+    animation: buttonBg 1s ease forwards;
+}
