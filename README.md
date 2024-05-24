@@ -23,7 +23,7 @@ Before running the application, ensure you have the following prerequisites inst
     ```
 2. **Environment variable Setup**
 
-use `.env.sample` file as a sample for setting up environment variable.
+    use `.env.sample` file as a sample for setting up environment variable.
 
 3. **Frontend Setup**:
 

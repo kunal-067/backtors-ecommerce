@@ -1,13 +1,12 @@
 const { Router } = require("express");
-const verifyToken = require("../middlewares/verifyToken");
 const { addReview, getAllReviews, getProductreview, deleteReview } = require("../controllers/review.controller");
-const { verifyAdmin } = require("../middlewares/checkRoles");
+const { verifyAdmin } = require("../middlewares/verifyRoles");
 
 const route = Router();
 
-route.post("/reviews", verifyToken, addReview);
-route.get("/reviews/:id", verifyToken, getProductreview);
-route.get("/reviews", verifyToken, verifyAdmin ,getAllReviews);
-route.delete("/reviews/:id", verifyToken, verifyAdmin, deleteReview);
+route.post("/reviews", addReview);
+route.get("/reviews/:id", getProductreview);
+route.get("/reviews", verifyAdmin ,getAllReviews);
+route.delete("/reviews/:id", verifyAdmin, deleteReview);
 module.exports = route;
 

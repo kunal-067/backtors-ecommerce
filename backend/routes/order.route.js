@@ -1,13 +1,12 @@
 const { Router } = require("express");
 const { getOrders, buyProduct, getAllOrders, updateOrder } = require("../controllers/order.controller");
-const verifyToken = require("../middlewares/verifyToken");
-const { verifyAdmin } = require("../middlewares/checkRoles");
+const { verifyAdmin } = require("../middlewares/verifyRoles");
 
 const route = Router();
-route.get('/orders', verifyToken, getOrders);
-route.post('/orders', verifyToken, buyProduct);
+route.get('/orders', getOrders);
+route.post('/orders', buyProduct);
 
-route.get('/all-orders', verifyToken, verifyAdmin, getAllOrders);
-route.put('/update-order/:id', verifyToken, verifyAdmin, updateOrder);
+route.get('/all-orders',  verifyAdmin, getAllOrders);
+route.put('/update-order/:id',  verifyAdmin, updateOrder);
 
 module.exports = route;

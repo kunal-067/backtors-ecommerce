@@ -1,10 +1,10 @@
 exports.verifyAdmin = (req, res, next) => {
     const {
         userId,
-        role
+        isAdmin
     } = req.data;
     try {
-        if (role !== 'admin') {
+        if (!isAdmin) {
             return res.status(401).json({
                 message: "You are not allowed to do this operation."
             })

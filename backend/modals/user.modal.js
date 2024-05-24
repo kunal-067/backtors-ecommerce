@@ -54,6 +54,11 @@ const userSchema = new mongoose.Schema({
     },
     cart: [cartSchema],
 
+    isAdmin:{
+        type:Boolean,
+        default:false
+    },
+
     registeredAt: {
         type: Date,
         default: Date.now()
