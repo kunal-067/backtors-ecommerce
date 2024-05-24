@@ -21,14 +21,23 @@ Before running the application, ensure you have the following prerequisites inst
     ```bash
     git clone https://github.com/itz-kunal/backtors.git
     ```
+
 2. **Environment variable Setup**
 
     use `.env.sample` file as a sample for setting up environment variable.
 
+- **Quick Access**:
+
+    ```bash
+    cd /BACKTORS
+    npm install
+    npm run dev
+    ```
+
 3. **Frontend Setup**:
 
     ```bash
-    cd /frontend
+    cd /BACKTORS/frontend
     npm install
     npm run dev
     ```
@@ -41,7 +50,16 @@ Before running the application, ensure you have the following prerequisites inst
     npm start
     ```
 
-5. **Access the Application**:
+**Access the Application**:
 
-    Once both frontend and backend servers are running, navigate to [http://localhost:3000](http://localhost:3000) in your web browser. For any issues with this application please contact me on [EMAIL](mailto:kunal.wd067@gmail.com).
+Once both frontend and backend servers are running, navigate to [http://localhost:3000](http://localhost:3000) in your web browser. 
 
+## Deep Dive in BACKTORS development
+
+View our documentation designed to help developer in quickly developing an ecommerce site it is a beginner friendly guide and the app is highly customizable:
+
+- [Frontend Guide](https://github.com/KnalShroff/backtors-ecommerce/blob/main/frontend/README.md)
+- [Backend Guide](https://github.com/KnalShroff/backtors-ecommerce/blob/main/backend/README.md)
+
+
+For any issues with this application please contact me on [EMAIL](mailto:kunal.wd067@gmail.com).

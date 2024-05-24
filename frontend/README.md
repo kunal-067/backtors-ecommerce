@@ -1,4 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# BACKTORS Frontend
+This is BACKTORS frontend a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Overview
+
+This app uses [shadcn](https://ui.shadcn.com/docs/components/accordion) and [aceternity](https://ui.aceternity.com/components) as a ui component library, and we uses [context API](https://react.dev/reference/react/useContext) for managing states
 
 ## Getting Started
 
